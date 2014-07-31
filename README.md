@@ -16,6 +16,7 @@
 - [Topology: Dimensions, Chaos, Fractals](2/2013-2-math-2.ipynb)
 - [Sequences: Basic of Numerics, Sound, and Images](3/2013-2-3.ipynb)
 - [Animation: Pursuit Curves, Blind men and Elephant, and Storage of Radioative Waste](4/2013-2-4.ipynb)
+- [Epidemic Model](14/sir.ipynb)
 - [Fly Fly to the Sky: Phugoid](5/2013-2-5.ipynb)
 - [Magic](5/magic.ipynb)
 - [Probability](6/2013-2-6.ipynb)
