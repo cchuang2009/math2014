@@ -20,7 +20,7 @@
 - [Fly Fly to the Sky: Phugoid](5/2013-2-5.ipynb)
 - [Magic](5/magic.ipynb)
 - [Probability](6/2013-2-6.ipynb)
-- [Estime $\\pi$ by Buffon Needle Model](6/Buffons_Needle_Sim.ipynb)
+- [Estimate $\\pi$ by Buffon Needle Model](6/Buffons_Needle_Sim.ipynb)
 - [Spiral and Spots](6/reactiondiff-2.ipynb)
 - [Markov Chain: From Money Ball... ](7/2013-2-7.ipynb)
 - [Lottery](8/lottery.ipynb)
