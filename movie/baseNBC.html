@@ -1,0 +1,146 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+</head>
+<style type="text/css">
+    body { 
+       margin: 10; 
+       padding: 10
+     }
+    input{
+       font-family:  Georgia, serif;
+       font-size: 1em; /* 20px / 10px */
+       color: #000 ;
+       background-color: #ffb200 ;    
+       border: 2px outset #b37d00 ;
+       border-radius: 10px;
+       width: 60px ;
+       text-decoration: none ;
+       background-color: #9cf ;
+       border-top: 1px solid #c0ffff ;
+       border-right: 1px solid #00f ;
+       border-bottom: 1px solid #00f ;
+       border-left: 1px solid #c0ffff ;
+    }
+    .push-down{
+       border: 1px solid #38538c;
+       background-color: #9cf;
+       //color: #FFFFFF;
+       text-shadow: 0px -1px 1px #213052;
+       box-shadow: inset 0 1px 10px 1px #5D88E3, 0px 1px 0 #1C2C4D, 0 6px 0px #1D3054, 0px 10px 25px rgba(0,0,0,.7);
+    }
+    .push-down:hover{
+       background: transparent;
+       box-shadow: inset 0 0px 20px 1px #88ADFC, 0px 1px 0 #1C2C4D, 0 6px 0px #1D3054, 0px 10px 25px rgba(0,0,0,.7);
+    }
+    .push-down:active{
+       box-shadow: inset 0 1px 10px 1px #5B89EB, 0 1px 0 #1A2847, 0 2px 0 #1C2D4D, 0px 3px 6px rgba(0,0,0,.9);
+       margin-top: 10px;
+    } 
+</style> 
+<body>
+<div align="center">
+
+<script language="Javascript">
+<!---
+var num_images_baseNBC = 10;
+var img_width = 800;
+var img_height = 600;
+var interval = 40;
+var images_baseNBC = new Array();
+
+function preload_images_baseNBC()
+{
+   t = document.getElementById("progress");
+
+   t.innerHTML = "Preloading image ";
+   images_baseNBC[0] = new Image(img_width, img_height);
+   images_baseNBC[0].src = "baseNBC/base0000.png";
+        
+   t.innerHTML = "Preloading image ";
+   images_baseNBC[1] = new Image(img_width, img_height);
+   images_baseNBC[1].src = "baseNBC/base0100.png";
+        
+   t.innerHTML = "Preloading image ";
+   images_baseNBC[2] = new Image(img_width, img_height);
+   images_baseNBC[2].src = "baseNBC/base0200.png";
+        
+   t.innerHTML = "Preloading image ";
+   images_baseNBC[3] = new Image(img_width, img_height);
+   images_baseNBC[3].src = "baseNBC/base0300.png";
+        
+   t.innerHTML = "Preloading image ";
+   images_baseNBC[4] = new Image(img_width, img_height);
+   images_baseNBC[4].src = "baseNBC/base0400.png";
+        
+   t.innerHTML = "Preloading image ";
+   images_baseNBC[5] = new Image(img_width, img_height);
+   images_baseNBC[5].src = "baseNBC/base0500.png";
+        
+   t.innerHTML = "Preloading image ";
+   images_baseNBC[6] = new Image(img_width, img_height);
+   images_baseNBC[6].src = "baseNBC/base0600.png";
+        
+   t.innerHTML = "Preloading image ";
+   images_baseNBC[7] = new Image(img_width, img_height);
+   images_baseNBC[7].src = "baseNBC/base0700.png";
+        
+   t.innerHTML = "Preloading image ";
+   images_baseNBC[8] = new Image(img_width, img_height);
+   images_baseNBC[8].src = "baseNBC/base0800.png";
+        
+   t.innerHTML = "Preloading image ";
+   images_baseNBC[9] = new Image(img_width, img_height);
+   images_baseNBC[9].src = "baseNBC/base0900.png";
+        
+   t.innerHTML = "";
+}
+
+function tick_baseNBC()
+{
+   if (frame_baseNBC > num_images_baseNBC - 1)
+       frame_baseNBC = 0;
+
+   document.movie.src = images_baseNBC[frame_baseNBC].src;
+   frame_baseNBC += 1;
+   tt = setTimeout("tick_baseNBC()", interval);
+}
+
+function startup_tmpmovie()
+{
+   preload_images_baseNBC();
+   frame_baseNBC = 0;
+   setTimeout("tick_baseNBC()", interval);
+}
+
+function stopit()
+{ clearTimeout(tt); }
+
+function restart_tmpmovie()
+{ tt = setTimeout("tick_baseNBC()", interval); }
+
+function slower()
+{ interval = interval/0.7; }
+
+function faster()
+{ interval = interval*0.7; }
+
+// --->
+</script>
+
+<form>
+&nbsp;
+<input type="button" class="push-down" value="Play" onClick="startup_tmpmovie()">
+<input type="button" class="push-down" value="Pause" onClick="stopit()">
+<input type="button" class="push-down" value="Replay" onClick="restart_tmpmovie()">
+&nbsp;
+<input type="button" class="push-down" value="Slower" onClick="slower()">
+<input type="button" class="push-down" value="Faster" onClick="faster()">
+</form>
+
+<p><div ID="progress"></div></p>
+<img src="baseNBC/base0000.png" name="movie" border=2/></div>
+
+</body>
+</html>
