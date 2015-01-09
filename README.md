@@ -9,6 +9,10 @@
 * IPython (2.+], ipywidgets, JSAnimation, ipy_table
 * ...
 
+[Note]
+
+The ipynb files available here were mostly made by last IPython; in otherwise, it is necessary to install IPython-3-dev to run normally.
+
 [Topics]
 
 - [Basics of Python](8/2014-2-8.ipynb)
@@ -27,3 +31,4 @@
 - [Greatest Indian Rope-Strick](13/index.ipynb)
 - [Trajectory of Whale swimming](10/Analyzing whale tracks.ipynb)
 - [Schödinger Wall](12/widget.ipynb)
+- [HTML-based Animation](movie/reactiondiff-2.html)
